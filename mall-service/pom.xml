@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.lanxige</groupId>
+        <artifactId>smmm</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>mall-service</artifactId>
+    <description>商城服务模块，提供商城核心业务功能实现</description>
+    <modules>
+        <module>mall-good-service</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <name>mall-service</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!--mall-service-dependency   jar包依赖  -->
+        <dependency>
+            <groupId>com.lanxige</groupId>
+            <artifactId>mall-service-dependency</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--mall-common 工具包依赖  -->
+        <dependency>
+            <groupId>com.lanxige</groupId>
+            <artifactId>mall-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--依赖于mall-goods-api-->
+        <dependency>
+            <groupId>com.lanxige</groupId>
+            <artifactId>mall-goods-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</project>
