@@ -29,3 +29,9 @@ logging:
   pattern:
     console: "%msg%n"
 
+# ===minio===
+minio:
+  end-point: http://192.168.239.130:9000
+  access-Key: admin
+  secret-Key: admin123456
+  bucket-name: yq-fourth-smmm

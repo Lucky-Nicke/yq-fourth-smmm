@@ -9,4 +9,5 @@ import java.util.List;
 public interface BrandService extends IService<Brand> {
     List<Brand> queryList(Brand brand);
     Page<Brand> queryPageList(Long page, Long size, Brand brand);
+    List<Brand> queryListByCategoryId(Integer categoryId);
 }

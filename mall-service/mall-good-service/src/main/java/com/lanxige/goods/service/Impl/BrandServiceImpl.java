@@ -34,5 +34,10 @@ public class BrandServiceImpl extends ServiceImpl<BrandMapper, Brand> implements
         return brandPage;
     }
 
-
+    @Override
+    public List<Brand> queryListByCategoryId(Integer categoryId) {
+        List<Integer> brandIds = baseMapper.queryBrandIds(categoryId);
+        List<Brand> brands = baseMapper.selectBatchIds(brandIds);
+        return brands;
+    }
 }

@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/brand")
+@CrossOrigin
 public class BrandController {
     @Autowired
     BrandService brandService;
@@ -45,17 +46,24 @@ public class BrandController {
 
     // 条件查询
     @GetMapping("/list")
-    public RespResult list(@RequestBody(required = false) Brand brand){
+    public RespResult<Brand> list(Brand brand){
         List<Brand> brands = brandService.queryList(brand);
         return RespResult.ok(brands);
     }
 
     // 分页查询
-    @GetMapping("/queryPageList/{page}/{size}")
-    public RespResult queryPageList(@PathVariable("page") Long page,
+    @PostMapping("/queryPageList/{page}/{size}")
+    public RespResult<Brand> queryPageList(@PathVariable("page") Long page,
                                     @PathVariable("size") Long size,
                                     @RequestBody Brand brand){
         Page<Brand> brandPage = brandService.queryPageList(page, size, brand);
         return RespResult.ok(brandPage);
+    }
+
+    // 根据分类id查询品牌
+    @GetMapping("/category/{id}")
+    public RespResult<Brand> queryBrandByCategoryId(@PathVariable("id") Integer id) {
+        List<Brand> brands = brandService.queryListByCategoryId(id);
+        return RespResult.ok(brands);
     }
 }
