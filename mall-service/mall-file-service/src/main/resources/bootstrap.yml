@@ -1,0 +1,22 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: mall-file
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 192.168.239.130:8848  # nacos 配置中心服务器的地址
+      discovery:
+        #Nacos的注册地址
+        server-addr: 192.168.239.130:8848
+minio:
+  end-point: http://192.168.239.130:9000  # linux 服务器上 minio 地址
+  access-Key: admin   # minio 账号
+  secret-Key: admin123456  # minio 密码
+  bucket-name: yq-fourth-smmm  # minio 是 桶名称
+#日志配置
+logging:
+  pattern:
+    console: "%msg%n"

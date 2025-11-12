@@ -2,10 +2,10 @@ server:
   port: 8081
 spring:
   application:
-    name: maill-goods
+    name: mall-goods
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.239.130:3307/smmm_goods_db?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://192.168.239.130:3307/smmm_goods_db?useUnicode=true&characterEncoding=utf-8&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC
     username: root
     password: 12345
   cloud:
@@ -16,6 +16,11 @@ spring:
       discovery:
         #Nacos的注册地址
         server-addr: 192.168.239.130:8848
+  #---Redis配置---
+  redis:
+    host: 192.168.239.130
+    port: 6380
+    password: 123456
 # ============Mybatis Plus===============
 mybatis-plus:
   mapper-locations: mapper/*.xml

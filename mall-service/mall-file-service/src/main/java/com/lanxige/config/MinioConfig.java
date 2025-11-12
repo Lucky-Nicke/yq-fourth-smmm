@@ -1,4 +1,4 @@
-package com.lanxige.goods.config;
+package com.lanxige.config;
 
 import io.minio.MinioClient;
 import org.springframework.beans.factory.annotation.Autowired;

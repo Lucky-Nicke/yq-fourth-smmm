@@ -1,4 +1,4 @@
-package com.lanxige.goods.service;
+package com.lanxige.service;
 
 import org.springframework.web.multipart.MultipartFile;
 

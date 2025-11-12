@@ -1,6 +1,6 @@
-package com.lanxige.goods.controller;
+package com.lanxige.controller;
 
-import com.lanxige.goods.service.FileUpLoadService;
+import com.lanxige.service.FileUpLoadService;
 import com.lanxige.util.RespResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;

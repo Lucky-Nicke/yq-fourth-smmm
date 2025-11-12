@@ -11,6 +11,8 @@
     <description>商城服务模块，提供商城核心业务功能实现</description>
     <modules>
         <module>mall-good-service</module>
+        <module>mall-canal-service</module>
+        <module>mall-file-service</module>
     </modules>
     <packaging>pom</packaging>
 
