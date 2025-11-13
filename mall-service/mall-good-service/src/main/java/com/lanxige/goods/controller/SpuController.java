@@ -1,12 +1,12 @@
 package com.lanxige.goods.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.lanxige.goods.model.Product;
+import com.lanxige.goods.model.Spu;
 import com.lanxige.goods.service.SpuService;
-import com.lanxige.model.Product;
-import com.lanxige.model.Spu;
+import com.lanxige.goods.vo.SpuAuditStatus;
+import com.lanxige.goods.vo.SpuSearch;
 import com.lanxige.util.RespResult;
-import com.lanxige.vo.SpuAuditStatus;
-import com.lanxige.vo.SpuSearch;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,7 +26,7 @@ public class SpuController {
     }
 
     @PostMapping("/queryPageList/{page}/{size}")
-    public RespResult list(@PathVariable("page") Integer page, @PathVariable("size") Integer size, @RequestBody(required = false)SpuSearch spuSearch){
+    public RespResult list(@PathVariable("page") Integer page, @PathVariable("size") Integer size, @RequestBody(required = false) SpuSearch spuSearch){
         Page<Spu> spuPage = spuService.queryPageList(page, size, spuSearch);
         return RespResult.ok(spuPage);
     }

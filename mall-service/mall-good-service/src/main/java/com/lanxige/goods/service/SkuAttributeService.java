@@ -2,8 +2,8 @@ package com.lanxige.goods.service;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.lanxige.model.SkuAttribute;
-import com.lanxige.vo.SkuAttributeSearch;
+import com.lanxige.goods.model.SkuAttribute;
+import com.lanxige.goods.vo.SkuAttributeSearch;
 
 import java.util.List;
 

@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @EnableDiscoveryClient
-@EnableFeignClients(basePackages = {"com.lanxige.feign"})
+@EnableFeignClients(basePackages = {"com.lanxige.goods.feign","com.lanxige.search.feign"})
 public class MallCanalApplication {
     public static void main(String[] args) {
         SpringApplication.run(MallCanalApplication.class,args);

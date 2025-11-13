@@ -9,10 +9,10 @@ import com.lanxige.goods.mapper.BrandMapper;
 import com.lanxige.goods.mapper.CategoryMapper;
 import com.lanxige.goods.mapper.SkuMapper;
 import com.lanxige.goods.mapper.SpuMapper;
+import com.lanxige.goods.model.*;
 import com.lanxige.goods.service.SpuService;
-import com.lanxige.model.*;
-import com.lanxige.vo.SpuAuditStatus;
-import com.lanxige.vo.SpuSearch;
+import com.lanxige.goods.vo.SpuAuditStatus;
+import com.lanxige.goods.vo.SpuSearch;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

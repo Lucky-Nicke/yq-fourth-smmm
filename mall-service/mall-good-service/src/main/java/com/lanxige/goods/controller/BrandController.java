@@ -1,8 +1,8 @@
 package com.lanxige.goods.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.lanxige.goods.model.Brand;
 import com.lanxige.goods.service.BrandService;
-import com.lanxige.model.Brand;
 import com.lanxige.util.RespResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

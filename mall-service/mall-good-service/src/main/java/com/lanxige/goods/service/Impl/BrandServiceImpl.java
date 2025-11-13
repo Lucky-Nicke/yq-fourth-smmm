@@ -4,8 +4,8 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lanxige.goods.mapper.BrandMapper;
+import com.lanxige.goods.model.Brand;
 import com.lanxige.goods.service.BrandService;
-import com.lanxige.model.Brand;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 

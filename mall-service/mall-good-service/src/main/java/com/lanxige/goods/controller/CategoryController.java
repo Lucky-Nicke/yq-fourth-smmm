@@ -1,7 +1,7 @@
 package com.lanxige.goods.controller;
 
+import com.lanxige.goods.model.Category;
 import com.lanxige.goods.service.Impl.CategoryServiceImpl;
-import com.lanxige.model.Category;
 import com.lanxige.util.RespResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

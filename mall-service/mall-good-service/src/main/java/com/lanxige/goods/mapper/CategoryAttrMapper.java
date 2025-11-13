@@ -1,7 +1,7 @@
 package com.lanxige.goods.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.lanxige.model.CategoryAttr;
+import com.lanxige.goods.model.CategoryAttr;
 import org.apache.ibatis.annotations.Insert;
 
 import java.util.ArrayList;

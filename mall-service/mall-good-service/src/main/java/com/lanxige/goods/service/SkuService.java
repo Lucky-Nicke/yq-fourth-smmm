@@ -1,7 +1,7 @@
 package com.lanxige.goods.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.lanxige.model.Sku;
+import com.lanxige.goods.model.Sku;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package com.lanxige.goods.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.lanxige.model.SkuAttribute;
+import com.lanxige.goods.model.SkuAttribute;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;

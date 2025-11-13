@@ -2,7 +2,7 @@ package com.lanxige.goods.service;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.lanxige.model.Brand;
+import com.lanxige.goods.model.Brand;
 
 import java.util.List;
 

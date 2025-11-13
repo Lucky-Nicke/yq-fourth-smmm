@@ -1,7 +1,7 @@
 package com.lanxige.goods.controller;
 
+import com.lanxige.goods.model.Sku;
 import com.lanxige.goods.service.Impl.SkuServiceImpl;
-import com.lanxige.model.Sku;
 import com.lanxige.util.RespResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

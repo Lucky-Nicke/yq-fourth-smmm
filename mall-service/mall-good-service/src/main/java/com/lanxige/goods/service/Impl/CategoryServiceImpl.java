@@ -3,8 +3,8 @@ package com.lanxige.goods.service.Impl;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lanxige.goods.mapper.CategoryMapper;
+import com.lanxige.goods.model.Category;
 import com.lanxige.goods.service.CategoryService;
-import com.lanxige.model.Category;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;

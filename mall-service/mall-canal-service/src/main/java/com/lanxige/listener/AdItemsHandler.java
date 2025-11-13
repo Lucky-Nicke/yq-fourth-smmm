@@ -1,7 +1,7 @@
 package com.lanxige.listener;
 
-import com.lanxige.feign.SkuFeign;
-import com.lanxige.model.AdItems;
+import com.lanxige.goods.feign.SkuFeign;
+import com.lanxige.goods.model.AdItems;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;

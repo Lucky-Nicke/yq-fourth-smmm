@@ -1,10 +1,10 @@
 package com.lanxige.goods.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.lanxige.goods.model.SkuAttribute;
 import com.lanxige.goods.service.SkuAttributeService;
-import com.lanxige.model.SkuAttribute;
+import com.lanxige.goods.vo.SkuAttributeSearch;
 import com.lanxige.util.RespResult;
-import com.lanxige.vo.SkuAttributeSearch;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
